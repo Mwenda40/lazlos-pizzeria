@@ -1,16 +1,16 @@
 #main {
   background-image: url("../images/background.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  position: fixed;
+  position: relative;
   padding: 0;
   margin: 0;
 
   top: 0;
   left: 0;
 
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
 }
 #formColumn {
   border: 1px solid black;

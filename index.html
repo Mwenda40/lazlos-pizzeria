@@ -32,51 +32,56 @@
           </div>
       <div id="row1" class="row-align-content-center">
         <div id="formColumn" class="col-6">
-          <form action="" name="form">
+          <form action="#" >
             <p>
               <h5>What size pizza would you like ?</h5>
             </p>
-            <input type="radio" name="size" id="small" />
+            <input type="radio" name="size" id="small" value="800" />
             <label for="small">small - 800</label><br />
 
-            <input type="radio" name="size" id="medium" />
+            <input type="radio" name="size" id="medium"  value="1000"/>
             <label for="medium">medium - 1000</label><br />
 
-            <input type="radio" name="size" id="large" />
+            <input type="radio" name="size" id="large" value="1200"/>
             <label for="large">large - 1200</label><br />
 
             <p><h5>what type of crust do you want on your pizza?</h5></p>
-            <input type="radio" name="crust" id="crispy" />
-            <label for="crispy">crispy  | small +100 | medium +150 | large +200</label><br />
+            <input type="radio" name="crust" id="crispy" value="150"/>
+            <label for="crispy">crispy  150</label><br />
 
-            <input type="radio" name="crust" id="stuffed" />
-            <label for="stuffed">stuffed  | small +100 | medium +150 | large +200</label><br />
+            <input type="radio" name="crust" id="stuffed" value="150"/>
+            <label for="stuffed">stuffed  150</label><br />
 
-            <input type="radio" name="crust" id="gluten-free" />
-            <label for="gluten-free">gluten-free  | small +50 | medium +100 | large +100</label><br /> 
+            <input type="radio" name="crust" id="gluten-free" value="100"/>
+            <label for="gluten-free">gluten-free  100</label><br /> 
 
             <p><h5>choose as many toppings as you would want</h5></p>
-            <input type="checkbox" name="toppings" id="extra-cheese">
-            <label for="extra-cheese">Extra cheese  | small +50 | medium +100 | large +100</label><br>
+            <input type="checkbox" name="toppings" id="extra-cheese" value="100">
+            <label for="extra-cheese">Extra cheese  100</label><br>
 
-            <input type="checkbox" name="toppings" id="chicken">
-            <label for="chicken">Chicken  | small +300 | medium +350 | large +400</label><br>
+            <input type="checkbox" name="toppings" id="chicken" value="350">
+            <label for="chicken">Chicken  350</label><br>
 
-            <input type="checkbox" name="toppings" id="salami">
-            <label for="salami">Salami  | small +250 | medium +300 | large +350</label><br>
+            <input type="checkbox" name="toppings" id="salami" value="300">
+            <label for="salami">Salami  300</label><br>
 
-            <input type="checkbox" name="toppings" id="beef">
-            <label for="beef">Beef  | small +300 | medium +350 | large +400</label><br><br>
-
-            <button id="btnunhide" class="btn-secondary">I want Delivery</button>
+            <input type="checkbox" name="toppings" id="beef" value="350">
+            <label for="beef">Beef  350</label><br><br>
+            
+            
+            <button type="button" id="btnunhide" class="btn-secondary">I want Delivery</button>
             <p id="btnhide">delivery is Shs 200 <br>
                 Enter your address below: <br>
                 <label for="location">enter street address</label>
-                <input type="text" id="location" >
+                <input type="text" id="location" value=""><br>
+                <button type="button" id="done" class="btn-secondary" onclick="location()">Done</button><br><br>
             </p>
-            <center><button id = "checkout" class="btn-primary" onclick="checkout();" >Checkout</button></center>
+            <center><button type="button" id = "chekout" class="btn-primary" onclick="checkout()" >Checkout</button></center>
+
+            <h4>Total:</h4>
+            <p id="results"></p>
           </form>
-          <p id="results"></p>
+          
         </div>
       </div>
     </div>
